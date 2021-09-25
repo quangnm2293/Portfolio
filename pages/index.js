@@ -1,15 +1,15 @@
 import Head from 'next/head'
-import Header from './components/Header';
+import Header from '../components/Header';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import Slider from './components/Slider';
-import About from './components/About';
-import MenuModal from './components/MenuModal';
-import Skills from './components/Skills';
-import Education from './components/Education';
-import Experience from './components/Experience';
-import SmallProject from './components/SmallProject';
+import Slider from '../components/Slider';
+import About from '../components/About';
+import MenuModal from '../components/MenuModal';
+import Skills from '../components/Skills';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
+import SmallProject from '../components/SmallProject';
 
 export default function Home() {
 	useEffect(() => {
