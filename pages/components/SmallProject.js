@@ -30,6 +30,8 @@ function SmallProject() {
 
 			<div className='p-10'>
 				<p className='uppercase text-xl tracking-widest text-green-600'>MINT LALA STORE</p>
+
+				<div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'></div>
 			</div>
 		</div>
 	);
