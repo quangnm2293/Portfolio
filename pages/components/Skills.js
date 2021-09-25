@@ -1,4 +1,5 @@
 import {
+	AcademicCapIcon,
 	CodeIcon,
 	DatabaseIcon,
 	DeviceMobileIcon,
@@ -11,7 +12,7 @@ import {
 
 function Skills() {
 	return (
-		<div className='max-w-screen-2xl mx-auto p-10 flex flex-col space-y-5'>
+		<div className='max-w-screen-2xl mx-auto p-10 flex flex-col space-y-5' id='skills'>
 			<p data-aos='fade-right' className='uppercase text-sm text-green-700 tracking-[4px]'>
 				WHAT I DO?
 			</p>
@@ -83,6 +84,15 @@ function Skills() {
 							<h1>NodeJS</h1>
 							<div className='min-w-[60vw] md:min-w-[80vw] lg:min-w-[30vw] h-2 bg-gray-400'>
 								<div className='w-[40%] h-2 bg-green-700'></div>
+							</div>
+						</div>
+					</div>
+					<div className='flex space-x-5 items-center'>
+						<AcademicCapIcon className='h-10 text-yellow-800' />
+						<div className='flex flex-col space-y-2'>
+							<h1>Photoshop/After Effect/Adobe Premiere</h1>
+							<div className='min-w-[60vw] md:min-w-[80vw] lg:min-w-[30vw] h-2 bg-gray-400'>
+								<div className='w-[70%] h-2 bg-yellow-800'></div>
 							</div>
 						</div>
 					</div>

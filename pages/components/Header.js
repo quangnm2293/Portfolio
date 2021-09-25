@@ -1,6 +1,5 @@
 import { MenuIcon } from '@heroicons/react/outline';
-import { useEffect, useState } from 'react';
-import MenuModal from './MenuModal';
+import { useState } from 'react';
 
 function Header() {
 	const categories = ['Home', 'About', 'Skills', 'Education', 'EXPERIENCE', 'Small Project', 'contact'];
@@ -16,17 +15,26 @@ function Header() {
 
 	const handleScroll = (category, e) => {
 		e.target.classList.add('text-red-400');
+		const contactEl = document.getElementById('contact');
+		const sliderEl = document.getElementById('slider');
+		const aboutEl = document.getElementById('about');
+		const skillsEl = document.getElementById('skills');
+		const educationEl = document.getElementById('education');
+		const experienceEl = document.getElementById('experience');
+		const projectEl = document.getElementById('project');
 		category === 'Home'
-			? (document.documentElement.scrollTop = 0)
+			? sliderEl.scrollIntoView({ behavior: 'smooth' })
 			: category === 'About'
-			? (document.documentElement.scrollTop = 700)
+			? aboutEl.scrollIntoView({ behavior: 'smooth' })
 			: category === 'Skills'
-			? (document.documentElement.scrollTop = 1300)
+			? skillsEl.scrollIntoView({ behavior: 'smooth' })
 			: category === 'Education'
-			? (document.documentElement.scrollTop = 1900)
+			? educationEl.scrollIntoView({ behavior: 'smooth' })
 			: category === 'EXPERIENCE'
-			? (document.documentElement.scrollTop = 2100)
-			: '';
+			? experienceEl.scrollIntoView({ behavior: 'smooth' })
+			: category === 'Small Project'
+			? projectEl.scrollIntoView({ behavior: 'smooth' })
+			: contactEl.scrollIntoView({ behavior: 'smooth' });
 	};
 	const handleTop = () => {
 		document.documentElement.scrollTop = 0;
@@ -46,7 +54,7 @@ function Header() {
 		<div
 			className={`${
 				position ? 'fixed top-0 left-0 right-0 animate-slide-top' : ''
-			} flex justify-between p-3 lg:p-4 items-center bg-gradient-to-b from-gray-700 to-gray-500
+			} flex justify-between p-3 lg:p-2 items-center bg-gradient-to-b from-gray-700 to-gray-500
 				z-10`}
 			id='header'
 		>

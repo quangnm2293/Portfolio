@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 function Slider() {
-	const images = ['/slide1.png', '/skill.png', '/slide2.png', '/slide3.png'];
+	const images = ['/slide1.png', '/slide2.png', '/slide3.png'];
 	const [tab, setTab] = useState(0);
 
 	const sliderInfoEl = document.getElementById('sliderInfo');
@@ -43,7 +43,7 @@ function Slider() {
 	};
 	return (
 		<div>
-			<div className='relative group overflow-hidden'>
+			<div className='relative group overflow-hidden' id='slider'>
 				<div className='animate-slide-left' id='slider'>
 					<Image
 						loading='lazy'
@@ -53,19 +53,19 @@ function Slider() {
 						height='800px'
 						className='object-fill '
 					/>
-				</div>
 
-				<div
-					className='w-5 h-10 lg:w-10 lg:h-20 absolute bg-[#00000036] left-2 top-[40%] group-hover:flex items-center cursor-pointer hidden'
-					onClick={handlePrevious}
-				>
-					<ChevronLeftIcon className='h-5 lg:h-10 text-white font-bold' />
-				</div>
-				<div
-					className='w-5 h-10 lg:w-10 lg:h-20 absolute bg-[#00000036] right-2 top-[40%] group-hover:flex items-center cursor-pointer hidden'
-					onClick={handleNext}
-				>
-					<ChevronRightIcon className='h-5 lg:h-10 text-white font-bold' />
+					<div
+						className='w-5 h-10 lg:w-10 lg:h-20 absolute bg-[#00000036] left-2 top-[40%] group-hover:flex items-center cursor-pointer hidden'
+						onClick={handlePrevious}
+					>
+						<ChevronLeftIcon className='h-5 lg:h-10 text-white font-bold' />
+					</div>
+					<div
+						className='w-5 h-10 lg:w-10 lg:h-20 absolute bg-[#00000036] right-2 top-[40%] group-hover:flex items-center cursor-pointer hidden'
+						onClick={handleNext}
+					>
+						<ChevronRightIcon className='h-5 lg:h-10 text-white font-bold' />
+					</div>
 				</div>
 
 				<div
@@ -79,7 +79,7 @@ function Slider() {
 					<p className='hidden sm:block text-green-700'>
 						I enjoy coding and I want to be a developer
 					</p>
-					<a href='/slide1.png' download>
+					<a href='/NguyenMinhQuang_CV.pdf' download>
 						<button className='border border-gray-500 text-blue-400 p-1 lg:p-2 self-start bg-gray-200'>
 							DOWNLOAD MY CV &rarr;
 						</button>

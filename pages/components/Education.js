@@ -1,6 +1,6 @@
 function Education() {
 	return (
-		<div className='max-w-screen-2xl mx-auto p-10 lg:p-20' data-aos='fade-left'>
+		<div className='max-w-screen-2xl mx-auto p-10 lg:p-20' data-aos='fade-left' id='education'>
 			<h1 className='text-2xl uppercase text-green-500 tracking-widest my-10'>Education</h1>
 
 			<div className='flex flex-col border-t-2 border-b-2 border-gray-300 lg:mx-32 py-5'>

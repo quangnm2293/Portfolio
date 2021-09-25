@@ -10,6 +10,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import SmallProject from './components/SmallProject';
+import Contact from './components/Contact';
 
 export default function Home() {
 	useEffect(() => {
@@ -38,7 +39,11 @@ export default function Home() {
 				<Experience />
 
 				<SmallProject />
+
+				<Contact />
 			</main>
+
+			<div className='p-5 text-center bg-blue-200'>Copyright &copy;2021</div>
 		</div>
 	);
 }

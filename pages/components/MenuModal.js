@@ -1,6 +1,9 @@
 import { XIcon } from '@heroicons/react/outline';
 
 function MenuModal() {
+
+	const categories = ['Home', 'About', 'Skills', 'Education', 'Experience', 'Small Project', 'contact'];
+
 	const handleClose = () => {
 		const menuModalEl = document.getElementById('menuModal');
 		const menuModalBodyEl = document.getElementById('menuModalBody');
@@ -26,6 +29,31 @@ function MenuModal() {
 		}
 	};
 
+	const handleScroll = category => {
+		const contactEl = document.getElementById('contact');
+		const sliderEl = document.getElementById('slider');
+		const aboutEl = document.getElementById('about');
+		const skillsEl = document.getElementById('skills');
+		const educationEl = document.getElementById('education');
+		const experienceEl = document.getElementById('experience');
+		const projectEl = document.getElementById('project');
+		category === 'Home'
+			? sliderEl.scrollIntoView({ behavior: 'smooth' })
+			: category === 'About'
+			? aboutEl.scrollIntoView({ behavior: 'smooth' })
+			: category === 'Skills'
+			? skillsEl.scrollIntoView({ behavior: 'smooth' })
+			: category === 'Education'
+			? educationEl.scrollIntoView({ behavior: 'smooth' })
+			: category === 'Experience'
+			? experienceEl.scrollIntoView({ behavior: 'smooth' })
+			: category === 'Small Project'
+			? projectEl.scrollIntoView({ behavior: 'smooth' })
+			: contactEl.scrollIntoView({ behavior: 'smooth' });
+
+		handleClose();
+	};
+
 	return (
 		<div className='hidden fixed top-0 right-0 left-0 bottom-0 bg-[#000000a6] z-20' id='menuModal'>
 			<div id='menuModalBody' className='fixed top-0 right-0 bottom-0 w-2/3 bg-gray-100'>
@@ -35,12 +63,15 @@ function MenuModal() {
 				</div>
 
 				<div className='flex flex-col space-y-5 p-5'>
-					<p>Home</p>
-					<p>About</p>
-					<p>Skills</p>
-					<p>Education</p>
-					<p>Small Project</p>
-					<p>Contact</p>
+					{categories.map((category, i) => (
+						<p
+							className='capitalize text-semibold tracking-wider text-xl text-gray-600'
+							key={i}
+							onClick={() => handleScroll(category)}
+						>
+							{category}
+						</p>
+					))}
 				</div>
 			</div>
 		</div>

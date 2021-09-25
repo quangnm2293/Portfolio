@@ -36,23 +36,15 @@ function About() {
 	};
 
 	return (
-		<div className='my-10 lg:my-20 flex py-5 px-2 flex-col space-y-3 lg:space-y-0 lg:space-x-6 lg:flex-row'>
+		<div
+			className='my-10 lg:my-20 flex py-5 px-2 flex-col space-y-3 lg:space-y-0 lg:space-x-6 lg:flex-row'
+			id='about'
+		>
 			<div className='lg:w-[45%] relative flex justify-center' data-aos='fade-right'>
-				<Image
-					src='https://res.cloudinary.com/dpgsqsnvm/image/upload/v1632204221/nextjs_media/rqk1i1upd9m5v2a6yzwz.jpg'
-					alt='about'
-					height='550px'
-					width='550px'
-					objectFit='contain'
-				/>
+				<Image src='/positive1.png' alt='about' height='550px' width='550px' objectFit='contain' />
 
 				<div className='absolute hidden xl:block right-0 top-[13%]'>
-					<Image
-						src='https://res.cloudinary.com/dpgsqsnvm/image/upload/v1632204221/nextjs_media/rqk1i1upd9m5v2a6yzwz.jpg'
-						alt='about'
-						height='400px'
-						width='550px'
-					/>
+					<Image src='/positive2.png' alt='about' height='400px' width='550px' />
 				</div>
 			</div>
 
@@ -60,10 +52,10 @@ function About() {
 				<p className='uppercase text-sm text-green-700 tracking-[4px]'>welcome & introduce</p>
 				<p className='uppercase text-xl text-green-500 tracking-widest'>Hi, my name is Quang</p>
 				<p className='text-green-700'>
-					On her way she met a copy. The copy warned the Little Blind Text, that where it came from
-					it would have been rewritten a thousand times and everything that was left from its origin
-					would be the word "and" and the Little Blind Text should turn around and return to its
-					own, safe country.
+					I am a tester and have 4 years testing telecommunication but I realized tester is not my
+					target. I want to become a developer. Covid-19 is the scary disease but for me, this is
+					the time help me to think about my career. So, I decided to start first line code and
+					start my career.
 				</p>
 
 				<div className='flex flex-col space-y-2'>
@@ -96,12 +88,7 @@ function About() {
 							id='whyChooseMe'
 						>
 							<div className='text-gray-500 p-3'>
-								<p>
-									Far far away, behind the word mountains, far from the countries
-									Vokalia and Consonantia, there live the blind texts. Separated
-									they live in Bookmarksgrove right at the coast of the Semantics, a
-									large language ocean.
-								</p>
+								<p>I cant</p>
 							</div>
 						</div>
 					</div>
