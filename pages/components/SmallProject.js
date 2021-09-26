@@ -25,8 +25,8 @@ function SmallProject() {
 						to think about it. And finally found my desire is coding not is testing. So, I
 						decided to take risk, start from the zero and want to be a hero. I spend 6 six
 						months to studying, with 12-16h/day. Started with HTML/CSS basic, Javascript,
-						ReactJS, NextJS, CSS library link Bootstrap, Tailwincss. Below is a small project i
-						have done after study."
+						ReactJS, NextJS, CSS library link Bootstrap, Tailwincss. And finally complete a
+						small project after that"
 					</p>
 				</div>
 			</div>
