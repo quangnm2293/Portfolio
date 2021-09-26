@@ -88,7 +88,9 @@ function About() {
 							id='whyChooseMe'
 						>
 							<div className='text-gray-500 p-3'>
-								<p>I cant</p>
+								<p>● The ability to work under pressure.</p>
+								<p>● Good problem-solving skills.</p>
+								<p>● Ability to work independently, proactive problem solver.</p>
 							</div>
 						</div>
 					</div>
@@ -117,13 +119,11 @@ function About() {
 							id='whatIDo'
 						>
 							<div className='text-gray-500 p-4'>
-								<p>
-									Far far away, behind the word mountains, far from the countries
-									Vokalia and Consonantia, there live the blind texts. <br />
-									Separated they live in Bookmarksgrove right at the coast of the
-									Semantics, a large language ocean. Separated they live in
-									Bookmarksgrove right Separated they live in Bookmarksgrove right
-								</p>
+								<p>● Work fluent tailwindcss.</p>
+								<p>● Basic Javascript.</p>
+								<p>● HTML/CSS skills for front-end development.</p>
+								<p>● Basic ReactJS/NextJs.</p>
+								<p>● Done some small project by my own.</p>
 							</div>
 						</div>
 					</div>
@@ -148,12 +148,9 @@ function About() {
 							id='mySpecialties'
 						>
 							<div className='text-gray-500 p-4'>
-								<p>
-									Far far away, behind the word mountains, far from the countries
-									Vokalia and Consonantia, there live the blind texts. Separated
-									they live in Bookmarksgrove right at the coast of the Semantics, a
-									large language ocean.
-								</p>
+								<p>● The ability to work under pressure.</p>
+								<p>● Good problem-solving skills.</p>
+								<p>● Can work overtime.</p>
 							</div>
 						</div>
 					</div>
