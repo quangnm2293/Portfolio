@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Header from './components/Header';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -17,13 +17,13 @@ export default function Home() {
 		Aos.init({ duration: 2000 });
 	}, []);
 	return (
-		<div className='overflow-hidden bg-gradient-to-b from-blue-200 to-blue-50'>
+		<div className="overflow-hidden bg-gradient-to-r from-pink-200 to-from-pink-100">
 			<Head>
 				<title>Portfolio</title>
-				<link rel='icon' href='/favicon.ico' />
+				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className=''>
+			<main className="max-w-screen-2xl">
 				<Header />
 
 				<Slider />
@@ -43,7 +43,7 @@ export default function Home() {
 				<Contact />
 			</main>
 
-			<div className='p-5 text-center bg-blue-200'>Copyright &copy;2021</div>
+			<div className="p-5 text-center bg-gradient-to-r from-gray-200 to-gray-100">Copyright &copy;2021</div>
 		</div>
 	);
 }
