@@ -40,10 +40,23 @@ function SmallProject() {
 				<div data-aos="slide-right" className="my-10">
 					<p className="uppercase text-xl tracking-widest text-green-600">PORTFOLIO</p>
 					<a href="https://github.com/quangnm2293/Portfolio.git" target="_blank">
-						<p className="tracking-wider text-green-600 pl-5">Github</p>
+						<p className="tracking-wider text-green-600 pl-5 hover:opacity-70">Github</p>
 					</a>
 					<a href="https://portfolio-ebon-two.vercel.app/" target="_blank">
-						<p className="tracking-wider text-green-600 pl-5">Vercel</p>
+						<p className="tracking-wider text-green-600 pl-5 hover:opacity-70">Vercel</p>
+					</a>
+				</div>
+				<div data-aos="slide-right" className="my-10">
+					<p className="uppercase text-xl tracking-widest text-green-600">Current projects</p>
+					<a href="https://beta.kisvn.vn:8443/board" target="_blank">
+						<p className="tracking-wider text-green-600 pl-5 hover:opacity-70">
+							Maintain & develop new feature website trading
+						</p>
+					</a>
+					<a href="https://trading.kisvn.vn/" target="_blank">
+						<p className="tracking-wider text-green-600 pl-5 hover:opacity-70">
+							Maintain trading website
+						</p>
 					</a>
 				</div>
 			</div>
